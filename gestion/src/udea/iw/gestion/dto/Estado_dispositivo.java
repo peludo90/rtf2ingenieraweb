@@ -1,6 +1,8 @@
 package udea.iw.gestion.dto;
 
-public class Estado_dispositivo {
+import java.io.Serializable;
+
+public class Estado_dispositivo implements Serializable {
 
 	private int id_estado_dispositivo;
 	private String nombre;

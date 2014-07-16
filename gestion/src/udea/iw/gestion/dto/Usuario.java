@@ -1,6 +1,8 @@
 package udea.iw.gestion.dto;
 
-public class Usuario {
+import java.io.Serializable;
+
+public class Usuario implements Serializable {
 
 	private int id_usuario;
 	private Tipo_usuario tipo_usuario;

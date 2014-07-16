@@ -1,6 +1,8 @@
 package udea.iw.gestion.dto;
 
-public class Prestamo {
+import java.io.Serializable;
+
+public class Prestamo implements Serializable {
 
 	private int id_prestamo;
 	private Solicitud solicitud;

@@ -1,6 +1,8 @@
 package udea.iw.gestion.dto;
 
-public class Tipo_dispositivo {
+import java.io.Serializable;
+
+public class Tipo_dispositivo implements Serializable {
 
 	private int id_tipo_dispositivo;
 	private String nombre;

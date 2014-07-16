@@ -1,6 +1,8 @@
 package udea.iw.gestion.dto;
 
-public class Estado_prestamo {
+import java.io.Serializable;
+
+public class Estado_prestamo implements Serializable {
 
 	private int id_estado_prestamo;
 	private String nombre;

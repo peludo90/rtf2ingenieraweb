@@ -1,9 +1,10 @@
 package udea.iw.gestion.dto;
 
+import java.io.Serializable;
 import java.sql.Time;
 import java.util.Date;
 
-public class Solicitud {
+public class Solicitud implements Serializable {
 
 	private int id_solicitud;
 	private UsuarioSimple usuario;
