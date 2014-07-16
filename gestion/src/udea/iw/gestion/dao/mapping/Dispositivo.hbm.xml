@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15/07/2014 02:24:25 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="udea.iw.gestion.dto.Dispositivo" table="dispositivo">
+        <id name="id_dispositivo" type="int">
+            <column name="id_dispositivo" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="tipo_dispositivo" class="udea.iw.gestion.dto.Tipo_dispositivo" fetch="join">
+            <column name="tipo_dispositivo" />
+        </many-to-one>
+        <many-to-one name="estado_dispositivo" class="udea.iw.gestion.dto.Estado_dispositivo" fetch="join">
+            <column name="estado_dispositivo" />
+        </many-to-one>
+        <property name="detalles_cambios" type="java.lang.String">
+            <column name="detalles_cambios" />
+        </property>
+    </class>
+</hibernate-mapping>

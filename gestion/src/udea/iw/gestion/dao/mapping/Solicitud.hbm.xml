@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15/07/2014 02:24:25 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="udea.iw.gestion.dto.Solicitud" table="solicitud">
+        <id name="id_solicitud" type="int">
+            <column name="id_solicitud" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="usuario" class="udea.iw.gestion.dto.UsuarioSimple" fetch="join">
+            <column name="usuario" />
+        </many-to-one>
+        <many-to-one name="dispositivo" class="udea.iw.gestion.dto.Dispositivo" fetch="join">
+            <column name="dispositivo" />
+        </many-to-one>
+        <many-to-one name="estado_solicitud" class="udea.iw.gestion.dto.Estado_solicitud" fetch="join">
+            <column name="estado_solicitud" />
+        </many-to-one>
+        <many-to-one name="admin_responde" class="udea.iw.gestion.dto.UsuarioSimple" fetch="join">
+            <column name="admin_responde" />
+        </many-to-one>
+        <property name="fecha_creacion" type="java.util.Date">
+            <column name="fecha_creacion" />
+        </property>
+        <property name="fecha_prestamo" type="java.util.Date">
+            <column name="fecha_prestamo" />
+        </property>
+        <property name="hora_salida" type="java.sql.Time">
+            <column name="hora_salida" />
+        </property>
+        <property name="hora_entrada" type="java.sql.Time">
+            <column name="hora_entrada" />
+        </property>
+    </class>
+</hibernate-mapping>

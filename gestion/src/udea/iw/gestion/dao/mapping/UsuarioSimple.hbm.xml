@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15/07/2014 02:24:25 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="udea.iw.gestion.dto.UsuarioSimple" table="USUARIOSIMPLE">
+        <id name="id_usuario" type="int">
+            <column name="ID_USUARIO" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre_usuario" type="java.lang.String">
+            <column name="nombre_usuaario" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

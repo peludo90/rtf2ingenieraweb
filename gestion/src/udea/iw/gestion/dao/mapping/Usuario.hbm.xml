@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15/07/2014 02:24:04 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="udea.iw.gestion.dto.Usuario" table="usuario">
+        <id name="id_usuario" type="int">
+            <column name="id_usuario" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="tipo_usuario" class="udea.iw.gestion.dto.Tipo_usuario" fetch="join">
+            <column name="tipo_usuario" />
+        </many-to-one>
+        <property name="nombre_usuario" type="java.lang.String">
+            <column name="nombre_usuario" length="45" />
+        </property>
+        <property name="documento" type="java.lang.String">
+            <column name="documento" length="12" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="password" length="45"/>
+        </property>
+        <property name="programa_academico" type="java.lang.String">
+            <column name="programa_academico" length="20" />
+        </property>
+        <property name="mail" type="java.lang.String">
+            <column name="mail" length="25" />
+        </property>
+        <property name="telefono" type="java.lang.String">
+            <column name="telefono" length="8" />
+        </property>
+        <property name="celular" type="java.lang.String">
+            <column name="celular" length="11" />
+        </property>
+    </class>
+</hibernate-mapping>

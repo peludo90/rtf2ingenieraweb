@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15/07/2014 02:24:25 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="udea.iw.gestion.dto.Prestamo" table="prestamo">
+		<id name="id_prestamo" type="int">
+			<column name="id_prestamo" />
+			<generator class="assigned" />
+		</id>
+		<many-to-one name="solicitud" class="udea.iw.gestion.dto.Solicitud"
+			fetch="join">
+			<column name="solicitud" />
+		</many-to-one>
+		<many-to-one name="estado_prestamo" class="udea.iw.gestion.dto.Estado_prestamo"
+			fetch="join">
+			<column name="estado_prestamo" />
+		</many-to-one>
+		<many-to-one name="admin_entrega" class="udea.iw.gestion.dto.UsuarioSimple"
+			fetch="join">
+			<column name="admin_entrega" />
+		</many-to-one>
+		<many-to-one name="admin_recibe" class="udea.iw.gestion.dto.UsuarioSimple"
+			fetch="join">
+			<column name="admin_recibe" />
+		</many-to-one>
+		<property name="detalle_prestamo" type="java.lang.String">
+			<column name="detalle_prestamo" />
+		</property>
+	</class>
+</hibernate-mapping>
