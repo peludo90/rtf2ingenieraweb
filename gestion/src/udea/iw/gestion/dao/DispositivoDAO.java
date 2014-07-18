@@ -14,14 +14,14 @@ public interface DispositivoDAO {
 	
 	public Dispositivo obtenerUnico(int id_dispositivo) throws GestionException;
 	
-	public List<Dispositivo> obtenerPorEstado(Estado_dispositivo estado_dispositivo);
+	public List<Dispositivo> obtenerPorEstado(Estado_dispositivo estado_dispositivo) throws GestionException;
 	
-	public List<Dispositivo> obtenerPorTipo(Tipo_dispositivo tipo_dispositivo);
+	public List<Dispositivo> obtenerPorTipo(Tipo_dispositivo tipo_dispositivo) throws GestionException;
 	
-	public Boolean agregarDispositivo(Dispositivo dispositivo);
+	public Boolean agregarDispositivo(Dispositivo dispositivo) throws GestionException;
 	
-	public Boolean actualizarDispositivo(int id_dispositivo, Dispositivo dispositivo);
+	public Boolean actualizarDispositivo(int id_dispositivo, Dispositivo dispositivo) throws GestionException;
 	
-	public Boolean eliminarDispositivo(int id_dispositivo);
+	public Boolean eliminarDispositivo(int id_dispositivo) throws GestionException;
 	
 }

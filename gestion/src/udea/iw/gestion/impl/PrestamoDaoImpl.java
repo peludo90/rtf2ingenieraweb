@@ -22,49 +22,49 @@ public class PrestamoDaoImpl implements PrestamoDAO{
 	}
 
 	@Override
-	public Prestamo obtenerUnicoConSolicitud(int id_solicitud) {
+	public Prestamo obtenerUnicoConSolicitud(int id_solicitud) throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Prestamo> obtenerPorEstado(Estado_prestamo estado_prestamo) {
+	public List<Prestamo> obtenerPorEstado(Estado_prestamo estado_prestamo) throws GestionException  {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Prestamo> obtenerPorUsuario(int id_usuario) {
+	public List<Prestamo> obtenerPorUsuario(int id_usuario) throws GestionException  {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Prestamo> obtenerPorAdmin_entrega(int id_usuario) {
+	public List<Prestamo> obtenerPorAdmin_entrega(int id_usuario) throws GestionException  {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Prestamo> obtenerPorAdmin_recibe(int id_usuario) {
+	public List<Prestamo> obtenerPorAdmin_recibe(int id_usuario) throws GestionException  {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Boolean agregarPrestamo(Prestamo prestamo) {
+	public Boolean agregarPrestamo(Prestamo prestamo) throws GestionException  {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Boolean actualizarPrestamo(int id_prestamo, Prestamo prestamo) {
+	public Boolean actualizarPrestamo(int id_prestamo, Prestamo prestamo) throws GestionException  {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Boolean eliminarDispositivo(int id_prestamo) {
+	public Boolean eliminarDispositivo(int id_prestamo) throws GestionException  {
 		// TODO Auto-generated method stub
 		return null;
 	}

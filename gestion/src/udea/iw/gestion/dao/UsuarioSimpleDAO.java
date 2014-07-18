@@ -12,8 +12,8 @@ public interface UsuarioSimpleDAO {
 	
 	public UsuarioSimple obtenerUnico(int id_usuario) throws GestionException;
 	
-	public List<UsuarioSimple> obtenerPorTipo_usuario(Tipo_usuario tipo_usuario);
+	public List<UsuarioSimple> obtenerPorTipo_usuario(Tipo_usuario tipo_usuario) throws GestionException;
 	
-	public Boolean eliminarUsuario(int id_Usuario);
+	public Boolean eliminarUsuario(int id_Usuario) throws GestionException;
 	
 }

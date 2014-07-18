@@ -24,32 +24,32 @@ public class DispositivoDaoImpl implements DispositivoDAO{
 
 	@Override
 	public List<Dispositivo> obtenerPorEstado(
-			Estado_dispositivo estado_dispositivo) {
+			Estado_dispositivo estado_dispositivo) throws GestionException{
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Dispositivo> obtenerPorTipo(Tipo_dispositivo tipo_dispositivo) {
+	public List<Dispositivo> obtenerPorTipo(Tipo_dispositivo tipo_dispositivo) throws GestionException{
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Boolean agregarDispositivo(Dispositivo dispositivo) {
+	public Boolean agregarDispositivo(Dispositivo dispositivo) throws GestionException{
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Boolean actualizarDispositivo(int id_dispositivo,
-			Dispositivo dispositivo) {
+			Dispositivo dispositivo)  throws GestionException{
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Boolean eliminarDispositivo(int id_dispositivo) {
+	public Boolean eliminarDispositivo(int id_dispositivo) throws GestionException{
 		// TODO Auto-generated method stub
 		return null;
 	}

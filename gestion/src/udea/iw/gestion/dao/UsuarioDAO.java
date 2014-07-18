@@ -12,14 +12,14 @@ public interface UsuarioDAO {
 
 	public Usuario obtenerUnico(int id_usuario) throws GestionException;
 
-	public List<Usuario> obtenerPorTipo_usuario(Tipo_usuario tipo_usuario);
+	public List<Usuario> obtenerPorTipo_usuario(Tipo_usuario tipo_usuario) throws GestionException;
 
-	public Boolean agregarUsuario(Usuario usuario);
+	public Boolean agregarUsuario(Usuario usuario) throws GestionException;
 
-	public Boolean actualizarUsuario(int id_Usuario, Usuario Usuario);
+	public Boolean actualizarUsuario(int id_Usuario, Usuario Usuario) throws GestionException;
 
-	public Boolean eliminarUsuario(int id_Usuario);
+	public Boolean eliminarUsuario(int id_Usuario) throws GestionException;
 
-	public Usuario obtenerUsuario(String nombre, String password);
+	public Usuario obtenerUsuario(String nombre, String password) throws GestionException;
 
 }

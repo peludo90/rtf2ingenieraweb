@@ -22,13 +22,13 @@ public class UsuarioSimpleDaoImpl implements UsuarioSimpleDAO{
 	}
 
 	@Override
-	public List<UsuarioSimple> obtenerPorTipo_usuario(Tipo_usuario tipo_usuario) {
+	public List<UsuarioSimple> obtenerPorTipo_usuario(Tipo_usuario tipo_usuario) throws GestionException{
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Boolean eliminarUsuario(int id_Usuario) {
+	public Boolean eliminarUsuario(int id_Usuario) throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}

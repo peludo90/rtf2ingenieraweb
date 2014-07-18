@@ -9,7 +9,7 @@ import udea.iw.gestion.util.exception.GestionException;
 public class Tipo_usuarioDaoImpl implements Tipo_usuarioDAO{
 
 	@Override
-	public List<Tipo_usuario> obtenerTodos() {
+	public List<Tipo_usuario> obtenerTodos() throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -22,20 +22,20 @@ public class Tipo_usuarioDaoImpl implements Tipo_usuarioDAO{
 	}
 
 	@Override
-	public Boolean agregarTipo_usuario(Tipo_usuario tipo_usuario) {
+	public Boolean agregarTipo_usuario(Tipo_usuario tipo_usuario) throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Boolean actualizarTipo_usuario(int id_Tipo_usuario,
-			Tipo_usuario tipo_usuario) {
+			Tipo_usuario tipo_usuario) throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Boolean eliminarTipo_usuario(int id_tipo_usuario) {
+	public Boolean eliminarTipo_usuario(int id_tipo_usuario) throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}

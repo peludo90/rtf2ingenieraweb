@@ -13,21 +13,21 @@ public interface PrestamoDAO {
 	
 	public Prestamo obtenerUnico(int id_prestamo) throws GestionException;
 	
-	public Prestamo obtenerUnicoConSolicitud(int id_solicitud);
+	public Prestamo obtenerUnicoConSolicitud(int id_solicitud) throws GestionException;
 	
-	public List<Prestamo> obtenerPorEstado(Estado_prestamo estado_prestamo);
+	public List<Prestamo> obtenerPorEstado(Estado_prestamo estado_prestamo) throws GestionException;
 	
-	public List<Prestamo> obtenerPorUsuario(int id_usuario);
+	public List<Prestamo> obtenerPorUsuario(int id_usuario) throws GestionException;
 	
-	public List<Prestamo> obtenerPorAdmin_entrega(int id_usuario);
+	public List<Prestamo> obtenerPorAdmin_entrega(int id_usuario) throws GestionException;
 	
-	public List<Prestamo> obtenerPorAdmin_recibe(int id_usuario);
+	public List<Prestamo> obtenerPorAdmin_recibe(int id_usuario) throws GestionException;
 
-	public Boolean agregarPrestamo(Prestamo prestamo);
+	public Boolean agregarPrestamo(Prestamo prestamo) throws GestionException;
 	
-	public Boolean actualizarPrestamo(int id_prestamo, Prestamo prestamo);
+	public Boolean actualizarPrestamo(int id_prestamo, Prestamo prestamo) throws GestionException;
 	
-	public Boolean eliminarDispositivo(int id_prestamo);
+	public Boolean eliminarDispositivo(int id_prestamo) throws GestionException;
 	
 	
 	

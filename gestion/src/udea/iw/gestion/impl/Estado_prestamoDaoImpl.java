@@ -9,7 +9,7 @@ import udea.iw.gestion.util.exception.GestionException;
 public class Estado_prestamoDaoImpl implements Estado_prestamoDAO{
 
 	@Override
-	public List<Estado_prestamo> obtenerTodos() {
+	public List<Estado_prestamo> obtenerTodos() throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -22,20 +22,20 @@ public class Estado_prestamoDaoImpl implements Estado_prestamoDAO{
 	}
 
 	@Override
-	public Boolean agregarEstado_prestamo(Estado_prestamo estado_prestamo) {
+	public Boolean agregarEstado_prestamo(Estado_prestamo estado_prestamo) throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Boolean actualizarEstado_prestamo(int id_estado_prestamo,
-			Estado_prestamo estado_prestamo) {
+			Estado_prestamo estado_prestamo) throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Boolean eliminarEstado_prestamo(int id_estado_prestamo) {
+	public Boolean eliminarEstado_prestamo(int id_estado_prestamo) throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}

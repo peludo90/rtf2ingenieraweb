@@ -12,28 +12,28 @@ public interface SolicitudDAO {
 
 	public List<Solicitud> obtenerTodos() throws GestionException;
 
-	public Solicitud obtenerUnico(int id_solicitud);
+	public Solicitud obtenerUnico(int id_solicitud) throws GestionException;
 	
-	public List<Solicitud> obtenerPorFecha_creacion(Date fecha_creacion);
+	public List<Solicitud> obtenerPorFecha_creacion(Date fecha_creacion) throws GestionException;
 	
-	public List<Solicitud> obtenerPorFecha_prestamo(Date fecha_prestamo);
+	public List<Solicitud> obtenerPorFecha_prestamo(Date fecha_prestamo) throws GestionException;
 	
-	public List<Solicitud> obtenerPorHora_salida(Time hora_salida);
+	public List<Solicitud> obtenerPorHora_salida(Time hora_salida) throws GestionException;
 	
-	public List<Solicitud> obtenerPorHora_entrada(Time hora_entrada);
+	public List<Solicitud> obtenerPorHora_entrada(Time hora_entrada) throws GestionException;
 	
-	public List<Solicitud> obtenerPorEstado(Estado_solicitud estado_solicitud);
+	public List<Solicitud> obtenerPorEstado(Estado_solicitud estado_solicitud) throws GestionException;
 	
-	public List<Solicitud> obtenerPorUsuario(int id_usuario);
+	public List<Solicitud> obtenerPorUsuario(int id_usuario) throws GestionException;
 	
-	public List<Solicitud> obtenerPorDispositivo(int id_dispositivo);
+	public List<Solicitud> obtenerPorDispositivo(int id_dispositivo) throws GestionException;
 	
-	public List<Solicitud> obtenerPorAdmin_acepta(int id_usuario);
+	public List<Solicitud> obtenerPorAdmin_acepta(int id_usuario) throws GestionException;
 
-	public Boolean agregarSolicitud(Solicitud solicitud);
+	public Boolean agregarSolicitud(Solicitud solicitud) throws GestionException;
 	
-	public Boolean actualizarSolicitud(int id_prestamo, Solicitud solicitud);
+	public Boolean actualizarSolicitud(int id_prestamo, Solicitud solicitud) throws GestionException;
 	
-	public Boolean eliminarSolicitud(int id_prestamo);
+	public Boolean eliminarSolicitud(int id_prestamo) throws GestionException;
 	
 }

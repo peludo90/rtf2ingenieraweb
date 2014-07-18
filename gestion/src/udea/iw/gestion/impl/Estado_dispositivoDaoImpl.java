@@ -9,7 +9,7 @@ import udea.iw.gestion.util.exception.GestionException;
 public class Estado_dispositivoDaoImpl implements Estado_dispositivoDAO {
 
 	@Override
-	public List<Estado_dispositivo> obtenerTodos() {
+	public List<Estado_dispositivo> obtenerTodos()  throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -23,20 +23,20 @@ public class Estado_dispositivoDaoImpl implements Estado_dispositivoDAO {
 
 	@Override
 	public Boolean agregarEstado_dispositivo(
-			Estado_dispositivo estado_dispositivo) {
+			Estado_dispositivo estado_dispositivo) throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Boolean actualizarEstado_dispositivo(int id_estado_dispositivo,
-			Estado_dispositivo estado_dispositivo) {
+			Estado_dispositivo estado_dispositivo) throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Boolean eliminarEstado_dispositivo(int id_estado_dispositivo) {
+	public Boolean eliminarEstado_dispositivo(int id_estado_dispositivo) throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}

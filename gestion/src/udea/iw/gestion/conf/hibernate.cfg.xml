@@ -10,15 +10,15 @@
 		<property name="hibernate.connection.username">user</property>
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="show_sql">true</property>
-		<mapping resource="udea/iw/gestion/dao/maping/Dispositivo.hbm.xml" />
-		<mapping resource="udea/iw/gestion/dao/maping/Estado_dispositivo.hbm.xml" />
-		<mapping resource="udea/iw/gestion/dao/maping/Estado_prestamo.hbm.xml" />
-		<mapping resource="udea/iw/gestion/dao/maping/Estado_solicitud.hbm.xml" />
-		<mapping resource="udea/iw/gestion/dao/maping/Prestamo.hbm.xml" />
-		<mapping resource="udea/iw/gestion/dao/maping/Solicitud.hbm.xml" />
-		<mapping resource="udea/iw/gestion/dao/maping/Tipo_dispositivo.hbm.xml" />
-		<mapping resource="udea/iw/gestion/dao/maping/Tipo_usuario.hbm.xml" />
-		<mapping resource="udea/iw/gestion/dao/maping/Usuario.hbm.xml" />
-		<mapping resource="udea/iw/gestion/dao/maping/UsuarioSimple.hbm.xml" />
+		<mapping resource="udea/iw/gestion/dao/mapping/Dispositivo.hbm.xml" />
+		<mapping resource="udea/iw/gestion/dao/mapping/Estado_dispositivo.hbm.xml" />
+		<mapping resource="udea/iw/gestion/dao/mapping/Estado_prestamo.hbm.xml" />
+		<mapping resource="udea/iw/gestion/dao/mapping/Estado_solicitud.hbm.xml" />
+		<mapping resource="udea/iw/gestion/dao/mapping/Prestamo.hbm.xml" />
+		<mapping resource="udea/iw/gestion/dao/mapping/Solicitud.hbm.xml" />
+		<mapping resource="udea/iw/gestion/dao/mapping/Tipo_dispositivo.hbm.xml" />
+		<mapping resource="udea/iw/gestion/dao/mapping/Tipo_usuario.hbm.xml" />
+		<mapping resource="udea/iw/gestion/dao/mapping/Usuario.hbm.xml" />
+		<mapping resource="udea/iw/gestion/dao/mapping/UsuarioSimple.hbm.xml" />
 	</session-factory>
 </hibernate-configuration>

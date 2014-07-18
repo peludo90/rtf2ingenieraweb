@@ -22,31 +22,31 @@ public class UsuarioDaoImpl implements UsuarioDAO{
 	}
 
 	@Override
-	public List<Usuario> obtenerPorTipo_usuario(Tipo_usuario tipo_usuario) {
+	public List<Usuario> obtenerPorTipo_usuario(Tipo_usuario tipo_usuario) throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Boolean agregarUsuario(Usuario usuario) {
+	public Boolean agregarUsuario(Usuario usuario) throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Boolean actualizarUsuario(int id_Usuario, Usuario Usuario) {
+	public Boolean actualizarUsuario(int id_Usuario, Usuario Usuario) throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Boolean eliminarUsuario(int id_Usuario) {
+	public Boolean eliminarUsuario(int id_Usuario) throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Usuario obtenerUsuario(String nombre, String password) {
+	public Usuario obtenerUsuario(String nombre, String password) throws GestionException {
 		// TODO Auto-generated method stub
 		return null;
 	}
